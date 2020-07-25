@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Sleepish Subscription</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        border: 2px solid black;
+        height: 100vh;
+        background-color:#F7F7F7;
+        padding-top: 67px;
+    }
+    .containeritem{
+        background-color: white;
+        max-width:800px;
+        margin: 0px auto;
+        padding: 67px 25px 45px 15px;
+      /*  font-family: 'Open Sans Condensed', sans-serif;*/
+      font-family: 'Open Sans', sans-serif; 
+      border: 2px solid blue;
+
+    }
+    h1{
+        text-align: center;
+       /* border: 2px solid blue;*/
+        padding-bottom: 36px;
+        font-weight: bolder;
+    }
+    .para1{
+       /* border: 2px solid red;*/
+        color: grey;
+        font-size: 16px;
+        padding-bottom: 17px;
+    }
+    .para2{
+        /*border: 2px solid red;*/
+        color: grey;
+        font-size: 16px;
+        padding-bottom: 57px;
+    }
+    form{
+        margin-left:180px;
+       /* border: 2px solid green;*/
+    }
+    label{
+        font-weight: 900;
+        font-size:15px;
+    }
+    input{
+        font-size: 15px;
+        font-style: normal;
+        width:70%;
+        padding: 5px 3px;
+        border: 2px solid #c9c9c9;
+        border-radius: 3px;
+    }
+    form a{
+        text-decoration: none;
+        background-color: cornflowerblue;
+        color: white;
+        display: inline-block;
+        margin-top:20px;
+        width: 70%;
+        text-align: center;
+        padding: 10px 2px;
+        font-weight: 900;
+        border-radius: 3px;
+        letter-spacing: 1px;
+        word-spacing:3px;
+        transition: all .3s linear;
+    }
+    a:hover{
+        background-color: rgb(83, 118, 182);
+    }
+   footer{
+       background-color: white;
+       display: flex;
+     /*  border: 2px solid red;*/
+       padding: 10px 0px;
+       align-items: center;
+       justify-content: space-evenly;
+   }
+   footer a{
+        text-decoration: none;
+        color:black;
+        display: inline-block;
+        letter-spacing: 1px;
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 14px;
+      /*  border: 2px solid darkmagenta;*/
+        padding: 4px 3px;
+   }
+    footer .para{
+        font-family: 'Open Sans', sans-serif; 
+        color: black;
+        font-size: 14px;
+      /*  border: 2px solid hotpink;*/
+        padding: 4px 3px;
+   }
+   @media only screen and (max-width:501px){
+       form{
+           margin-left: 0px;
+       }
+       .containeritem{
+             padding:47px 25px 25px 15px;
+       }
+       .para2{
+           padding-bottom: 27px;
+       }
+       input{
+           width: 100%;
+       }
+       form a{
+           width: 100%;
+       }
+   }
+   @media only screen and (max-width:371px){
+       .containeritem h1{
+           padding-bottom: 16px;
+           font-size: 20px;
+       }
+       .container{
+           padding-top: 37px;
+       }
+       footer{
+           flex-direction: column;
+       }
+       .containeritem{
+           padding: 25px 25px 20px 15px;
+       }
+       footer{
+           padding: 20px 0px;
+       }
+   }
+</style>
+<body>
+    <div class="container">
+        <div class="containeritem">
+            <h1>Thanks for your time</h1>
+            <p class="para1">You are now subscribing to the Sleepish mailing list. We will keep you informed about updates and announcements. It is wonderful to have you join us today - a special day, indeed! If you, at any point, want to unsubscribe from our list, you can always do so with the click of a button.Looking forward to getting in touch with you!</p>
+            <p class="para2">- Sleepish Team</p>
+            <form action="">
+                <label for="">Email Address</label>
+                <div>
+                <input type="text" name="email" id="email" autocomplete="off">
+                </div>
+                <a href="http://">Let's Sleep</a>
+            </form>
+        </div>
+    </div>
+    <footer>
+         <a href="">Report abuse</a>
+         <p class="para">developed by Johnson Saurav</p>
+    </footer>
+</body>
+</html>
