@@ -153,7 +153,9 @@ html{
 }
 .sleepingitem img{
     width:50%;
-    
+    -webkit-box-shadow: 10px 0px 19px -5px rgba(0,0,0,0.75),-10px 0px 19px -5px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 0px 19px -5px rgba(0,0,0,0.75),-10px 0px 19px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 19px -5px rgba(0,0,0,0.75),-10px 0px 19px -5px rgba(0,0,0,0.75);
 }
 .sleepingitem .box{
   /*  border: 2px solid blue;*/
